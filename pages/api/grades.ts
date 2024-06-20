@@ -1,5 +1,5 @@
 import { NextApiRequest, NextApiResponse } from 'next';
-import { calculateMeanAndStd, assignGrades } from '../../utils/gradeUtils';
+import { calculateMeanAndStd, assignGrades } from '../../pages/utils/gradeUtils';
 export default function handler(req: NextApiRequest, res: NextApiResponse) {
   if (req.method === 'POST') {
     const { marks } = req.body;
